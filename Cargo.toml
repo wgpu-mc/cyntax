@@ -10,5 +10,6 @@ cyntax_common = {path="./cyntax_common"}
 cyntax_consteval = {path="./cyntax_consteval"}
 cyntax_errors = {path="./cyntax_errors"}
 cyntax_parser = {path="./cyntax_parser"}
+regex = "1.12.3"
 [workspace]
 members = ["./test_crate"]
