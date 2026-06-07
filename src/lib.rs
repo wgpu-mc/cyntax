@@ -4,7 +4,7 @@ use std::{collections::HashMap, fmt::Write};
 
 use cyntax_common::{
     ast::{PreprocessingToken, Whitespace},
-    ctx::{HasContext, ParseContext, string_interner},
+    ctx::{HasContext, ParseContext},
     spanned::Spanned,
 };
 use cyntax_errors::codespan_reporting::files::SimpleFiles;

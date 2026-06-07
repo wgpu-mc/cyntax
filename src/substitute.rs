@@ -4,7 +4,6 @@ use cyntax_common::{
     ast::{PreprocessingToken, Punctuator},
     ctx::{
         ParseContext,
-        string_interner::{backend::StringBackend, symbol::SymbolU32},
     },
     span,
     spanned::{Location, Spanned},
@@ -64,7 +63,7 @@ impl<'a, I: Debug + Iterator<Item = Spanned<PreprocessingToken>>> Iterator
                 }
             }
             token if self.stringify_next_token => {
-                dbg!(&token);
+                // dbg!(&token);
                 let a = self.maybe_substitute_arg(token.clone(), false);
                 Self::stringify_tokens(a.iter(), &mut self.stringify_string);
                 self.replacements.prepend(Spanned::new(

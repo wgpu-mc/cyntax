@@ -70,7 +70,7 @@ impl<'src> Iterator for Lexer<'src> {
                 }))
             }
 
-            // Literals
+            // Literals, technically we should've parse string literals (or escaped char literals) but it hasn't been a problem yet
             span!(range, '"') => {
                 let string = self.lex_string_literal(range);
                 // Some(string.map(|string| PreprocessingToken::StringLiteral(self.ctx.strings.get_or_intern(string))))

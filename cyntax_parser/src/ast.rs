@@ -1,6 +1,5 @@
 use cyntax_common::{
     ast::{Keyword, Punctuator},
-    ctx::string_interner::symbol::SymbolU32,
     spanned::Spanned,
 };
 

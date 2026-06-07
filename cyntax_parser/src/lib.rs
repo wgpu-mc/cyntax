@@ -3,7 +3,7 @@ use constant::{ConstantParser, IntConstant};
 use cyntax_common::span;
 use cyntax_common::{
     ast::*,
-    ctx::{ParseContext, string_interner::symbol::SymbolU32},
+    ctx::{ParseContext},
     spanned::{Location, Spanned},
 };
 use cyntax_errors::{Diagnostic, errors::SimpleError};

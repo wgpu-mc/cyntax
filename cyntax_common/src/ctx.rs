@@ -1,6 +1,4 @@
 use codespan_reporting::files::{SimpleFile, SimpleFiles};
-pub use string_interner;
-use string_interner::{backend::StringBackend, symbol::SymbolU32};
 
 pub type File = SimpleFile<String, String>;
 /// The entire parsing context

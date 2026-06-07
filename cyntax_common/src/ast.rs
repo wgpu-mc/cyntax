@@ -1,4 +1,3 @@
-use string_interner::symbol::SymbolU32;
 use strum_macros::EnumString;
 
 use crate::spanned::Spanned;
