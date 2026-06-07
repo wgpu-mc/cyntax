@@ -280,6 +280,7 @@ impl<'src, I: Debug + Iterator<Item = TokenTree>> Expander<'src, I> {
                 // todo: deal with `else if`, its terrible but needs to be supported
                 return Ok(ExpandControlFlow::RescanMany(body));
             }
+            TokenTree::Endif => {}
             _ => {
                 println!("warning: unhandled tt {:#?}", tt)
             }
